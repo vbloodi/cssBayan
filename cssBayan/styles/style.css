@@ -67,6 +67,7 @@ html {
   width: 20px;
   height: 20px;
   opacity: 0;
+  transition: opacity, rotate, 0.3s;
 }
 
 .label-header {
