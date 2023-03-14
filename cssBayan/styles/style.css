@@ -129,10 +129,6 @@ html {
   opacity: 1;
 }
 
-.accordion__input:checked ~ .label-icon {
-  background-color: red;
-}
-
 /* --- MEDIA --- */
 
 @media (max-width: 1560px) {
@@ -162,6 +158,18 @@ html {
 
   .accordion__img {
     max-width: 55vw;
+  }
+
+  .accordion__section:has(.accordion__input:checked) .accordion__label {
+    color: rgb(250, 250, 250);
+  }
+
+  .accordion:hover .accordion__label {
+    color: rgb(180, 180, 180);
+  }
+
+  .accordion:hover .label-icon {
+    opacity: 0;
   }
 }
 
