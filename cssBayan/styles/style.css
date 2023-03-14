@@ -171,6 +171,20 @@ html {
   .accordion:hover .label-icon {
     opacity: 0;
   }
+
+  .accordion__section:has(.accordion__input:hover) .accordion__img {
+    height: 0;
+    padding-bottom: 0rem;
+    opacity: 1;
+    scale: 1;
+  }
+
+  .accordion__section:has(.accordion__input:checked) .accordion__img {
+    height: auto;
+    padding-bottom: 1.5rem;
+    opacity: 1;
+    scale: 1;
+  }
 }
 
 @media (max-width: 500px) {
